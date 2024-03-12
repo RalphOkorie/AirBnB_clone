@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""it contains the entry point of the command interpreter"""
+"""contains the entry point of the command interpreter"""
 import cmd
 import re
 from models import storage
@@ -14,7 +14,7 @@ from models.amenity import Amenity
 
 
 class HBNBCommand(cmd.Cmd):
-    """command interpreter"""
+    """The command interpreter"""
 
     __classes = ["BaseModel",
                  "User",
@@ -96,7 +96,7 @@ class HBNBCommand(cmd.Cmd):
             print("** no instance found **")
 
     def do_all(self, arg):
-        """ it prints all string representation of all instances based or
+        """Prints all string representation of all instances based or
         not on the class name"""
         class_list = []
         check = False
@@ -116,7 +116,7 @@ class HBNBCommand(cmd.Cmd):
         print(class_list)
 
     def do_update(self, arg):
-        """it updates an instance based on the class name and id by adding or
+        """Updates an instance based on the class name and id by adding or
         updating attribute (save the change into the JSON file)
         """
         my_classes = storage.all()
