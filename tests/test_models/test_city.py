@@ -1,4 +1,3 @@
-test_city.py
 #!/usr/bin/python3
 """Defines unittests for models/city.py.
 
